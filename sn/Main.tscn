@@ -1,14 +1,11 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://sn/Main.gd" type="Script" id=1]
+[ext_resource path="res://sn/mainCamera.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
 [node name="Main" type="Node2D" index="0"]
 
-script = ExtResource( 1 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
-CameraSpeed = 200
-ZoomSpeed = 1
 
 [node name="mainCamera" type="Camera2D" parent="." index="0"]
 
@@ -34,6 +31,7 @@ drag_margin_bottom = 1.0
 editor_draw_screen = true
 editor_draw_limits = true
 editor_draw_drag_margin = true
+script = ExtResource( 1 )
 _sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Offset", "Smoothing", "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
