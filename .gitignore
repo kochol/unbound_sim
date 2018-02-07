@@ -3,3 +3,7 @@
 /gamecode/x64
 /gamecode/gamecode/Debug
 /gamecode/gamecode/x64
+lib/gamecode.exp
+lib/gamecode.ilk
+lib/gamecode.lib
+lib/gamecode.pdb
