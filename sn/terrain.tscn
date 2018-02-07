@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://sn/tileset/basic.tres" type="TileSet" id=1]
 [ext_resource path="res://sn/terrain.gd" type="Script" id=2]
+[ext_resource path="res://art/mapPack_tilesheet.png" type="Texture" id=3]
 
-[node name="Terrain" type="TileMap"]
+[node name="Terrain" type="TileMap" index="0"]
 
 mode = 0
 tile_set = ExtResource( 1 )
@@ -12,7 +13,7 @@ cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 cell_half_offset = 2
 cell_tile_origin = 0
-cell_y_sort = false
+cell_y_sort = true
 cell_clip_uv = false
 collision_use_kinematic = false
 collision_friction = 1.0
@@ -24,5 +25,21 @@ format = 1
 tile_data = PoolIntArray(  )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Cell", "Collision", "Occluder" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( 471.57, 272.172 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 712, 128, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Sprite2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 500.238, 225.079 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 712, 128, 64, 64 )
+_sections_unfolded = [ "Region" ]
 
 

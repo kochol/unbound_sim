@@ -4,7 +4,7 @@
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://sn/terrain.tscn" type="PackedScene" id=3]
 
-[node name="Main" type="Node2D" index="0"]
+[node name="Main" type="Node2D"]
 
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 
@@ -41,5 +41,7 @@ position = Vector2( 163.779, 133.021 )
 texture = ExtResource( 2 )
 
 [node name="Terrain" parent="." index="2" instance=ExtResource( 3 )]
+
+cell_y_sort = true
 
 
