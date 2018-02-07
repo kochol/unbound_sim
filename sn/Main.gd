@@ -5,7 +5,7 @@ extends Node2D
 # var b = "textvar"
 
 func _ready():
-	$Terrain.Init(64,64)
+	$Terrain.Init(32,32)
 	$Terrain.Generate()
 
 #func _process(delta):

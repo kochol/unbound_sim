@@ -2,7 +2,8 @@
 #include "Array2D.h"
 #include <Godot.hpp>
 #include <TileMap.hpp>
-
+#include <PackedScene.hpp>
+#include <Resource.hpp>
 using namespace godot;
 
 namespace my
@@ -30,5 +31,6 @@ namespace my
 			m_iHeight;
 
 		Array2D<int>* m_pMap;
+		Ref<PackedScene> m_rTree1;
 	};
 }
